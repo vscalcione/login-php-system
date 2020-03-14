@@ -8,4 +8,4 @@ put the project's folder in xamppInstallationFolder/htdocs
 <li>If you use Linux is: <b>/opt/lampp/htdocs</b></li>
 <br>
 After run XAMPP with a click on the software and click on <b>Apache Web server start</b>. Then open browser and put on bar the link
-<em><b> http://localhost:80/projectFolder
+<em><b> http://localhost:80/projectFolder</b></em>
