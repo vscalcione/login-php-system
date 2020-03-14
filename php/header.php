@@ -10,6 +10,19 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
+        <link rel="icon" href="../assets/profile/login-ico.ico" />
+
+        <style type="text/css">
+            #back_to_top {
+                display:none;
+                position: fixed;
+                bottom: 15px;
+                right: 15px;
+                cursor: pointer;
+                width:50px;
+            }
+            </style>
+
     </head>
     <body>
 

@@ -12,7 +12,7 @@ $(document).ready( function(e){
            return true;
        }else{
            $error.text("Le password devono essere uguali");
-           // event.preventDefault();
+           event.preventDefault();
        }
    })
 });
@@ -22,6 +22,9 @@ function readURL(input){
        let reader = new FileReader();
        reader.onload = function(e){
            $('#register .upload-profile-image .img').attr('src', e.target.result);
-       }, reader.readAsDataURL(input.files[0]);
+       }
+       reader.readAsDataURL(input.files[0]);
    }
 };
+
+// Metodo per fare lo scroll sulla pagina

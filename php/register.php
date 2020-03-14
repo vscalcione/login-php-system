@@ -7,7 +7,7 @@
      <div class="row m-0">
          <div class="col-lg-4 offset-lg-2">
              <div class="text-center pb-5">
-                 <h1 class="login-title text-dark">Registrati</h1>
+                 <h1 class="login-title text-dark">Accedi/Registrati</h1>
                  <p class="p-1 m-0 font-ubuntu text-black-50" id="register-p">Registrati e goditi le funzionalità aggiuntive </p>
                  <span class="font-ubuntu text-black-50"> Ho già effettuato la <a href="login.php">Login</a></span>
              </div>
@@ -30,6 +30,12 @@
                          </div>
                          <div class="col">
                              <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Cognome">
+                         </div>
+                     </div>
+
+                     <div class="form-row my-4">
+                         <div class="col">
+                             <input type="text" name="dataNascita" id="dataNascita" class="form-control" placeholder="Data Nascita" />
                          </div>
                      </div>
 
