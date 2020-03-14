@@ -1,3 +1,4 @@
+/** Import dell'url per il font di Ubuntu **/
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 
 :root{
@@ -58,4 +59,24 @@
 
 #register .upload-profile-image:hover .camera-icon{
     filter: invert(100%) !important;
+}
+
+#registration-form input[type=text]{
+    border: none;
+    border-radius: unset;
+    border-bottom: 1px solid var(--color-border);
+    font-family: var(--font-ubuntu);
+    fotn-size: 18px;
+}
+#registration-form input[type=text], #registration-form input[type=email], #registration-form input[type=password]{
+    border: none;
+    border-radius: unset;
+    border-bottom: 1px solid var(--color-border);
+    font-family: var(--font-ubuntu);
+    fotn-size: 18px;
+}
+
+#registration-form input[type=text], #registration-form input[type=email], #registration-form input[type=password]{
+    outline: none;
+    box-shadow: none;
 }
