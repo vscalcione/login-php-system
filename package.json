@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vscalcione/login-php-system#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "normalize.css": "^8.0.1"
   }
 }

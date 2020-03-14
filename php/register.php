@@ -2,12 +2,18 @@
     include('header.php');
 ?>
 
+<?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        require('register-process.php');
+    }
+?>
+
 <!-- Start Registration area -->
  <section id="register">
      <div class="row m-0">
          <div class="col-lg-4 offset-lg-2">
              <div class="text-center pb-5">
-                 <h1 class="login-title text-dark">Accedi/Registrati</h1>
+                 <h1 class="login-title text-dark" style="font-family:quicksand;">Accedi/Registrati</h1>
                  <p class="p-1 m-0 font-ubuntu text-black-50" id="register-p">Registrati e goditi le funzionalità aggiuntive </p>
                  <span class="font-ubuntu text-black-50"> Ho già effettuato la <a href="login.php">Login</a></span>
              </div>
@@ -26,10 +32,10 @@
                      <!-- Nome e cognome input -->
                      <div class="form-row">
                          <div class="col">
-                             <input type="text" name="firstName" id="firstName" class="form-control" placeholder="Nome">
+                             <input type="text" value="<?php if(isset($_POST['firstName'])) echo $_POST['firstName']; ?>" name="firstName" id="firstName" class="form-control" placeholder="Nome">
                          </div>
                          <div class="col">
-                             <input type="text" name="lastName" id="lastName" class="form-control" placeholder="Cognome">
+                             <input type="text" value="<?php if(isset($_POST['lastName'])) echo $_POST['lastName']; ?>" name="lastName" id="lastName" class="form-control" placeholder="Cognome">
                          </div>
                      </div>
 
@@ -42,7 +48,7 @@
                      <!-- Email input -->
                      <div class="form-row my-4">
                          <div class="col">
-                             <input type="email" name="email" id="email" class="form-control" placeholder="Email*" required>
+                             <input type="email" value="<?php if(isset($_POST['email'])) echo $_POST['email']; ?>" name="email" id="email" class="form-control" placeholder="Email*" required>
                          </div>
                      </div>
 
@@ -69,7 +75,7 @@
                      </div>
 
                      <div class="submit-btn text-center my-5">
-                         <button type="" class="btn btn-warning rounded-pill text-dark px-5"> Continue </button>
+                         <button type="" class="btn btn-warning rounded-pill text-dark px-5" style="font-family:quicksand;"> Registrati </button>
                      </div>
 
                  </form>
