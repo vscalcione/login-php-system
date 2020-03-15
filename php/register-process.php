@@ -36,7 +36,15 @@
     }
 
     if(empty($error)){
-        echo 'validate';
+        //register a new user
+        $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        require('mysqli_connect.php');
+
+        //make a query
+        $query = "INSERT INTO user(user_id, first_name, last_name, email, password, profile_image, register_date)";
+        $query .= "VALUES ('', ?, ?, ?, ?, ?, NOW())";
+
+        $variable = mysqli_stmt_init($connection);
     }else{
         echo 'not validate';
     }
